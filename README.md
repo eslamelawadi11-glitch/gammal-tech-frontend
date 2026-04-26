@@ -1,16 +1,26 @@
-# React + Vite
+# VIP Healthcare Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+منصة طبية فاخرة تقدم تجربة مستخدم عصرية وتقييمات صحية وقائية.
 
-Currently, two official plugins are available:
+## Backend Integration (Gammal Tech)
+تم الاعتماد بشكل كامل على البنية التحتية البرمجية لشركة **جمال تك (Gammal Tech)** لخدمات الباك اند والتوثيق:
+- **Authentication**: استخدام نظام `Gammal Tech Passport` لتسجيل الدخول الموحد.
+- **SDK**: دمج `Gammal Tech Web SDK` لإدارة الجلسات (Sessions) والتحقق من هوية المستخدمين.
+- **Security**: تأمين المسارات (Protected Routes) بناءً على استجابة الباك اند من الـ SDK.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+* **Frontend**: React.js (Vite)
+* **Styling**: Tailwind CSS (Premium Navy & Gold Theme)
+* **Animations**: Framer Motion
+* **Icons**: Lucide React
+* **Notifications**: React Hot Toast
 
-## React Compiler
+## المميزات الهندسية
+- **Data Binding Readiness**: الكود مهيأ لربط البيانات الحقيقية عبر ملف `mockData.js`.
+- **Responsive Architecture**: تصميم متجاوب يتحول من Dashboard للديسك توب إلى App للموبايل.
+- **Protected Routes**: حماية لوحة التحكم ومنع الوصول لغير المسجلين عبر Hooks مخصصة.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 How to run
+1. `npm install`
+2. `npm run build`
+3. `npm run dev`
